@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    a.active {
+        @apply font-semibold text-blue-500 relative  transition-all delay-200 ;
+
+    }
+    
+}
