@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8" />
+        <title>Wahyu Teknik</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="apple-touch-icon" href="" />
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="./css/app.minify.css" />
+        <link rel="icon" href="images/favicon.ico" />
+
+        <meta name="theme-color" content="#000" />
+    </head>
+
+    <body class="text-gray-900">
+        <!-- START: header -->
+        <div class="relative bg-white h-full">
+            <div class="max-w-7xl  mx-auto ">
+                <div>
+                    <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+                        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+                            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                                <div class="flex items-center justify-between w-full md:w-auto">
+                                    <a href="#">
+                                        <span class="sr-only">Workflow</span>
+                                        <img class="h-8 w-auto sm:h-10" src="./images/content/logo.png" />
+                                    </a>
+                                    <div class="-mr-2 flex items-center md:hidden">
+                                        <button
+                                            id="toggle"
+                                            type="button"
+                                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                            aria-expanded="false"
+                                        >
+                                            <span class="sr-only">Open main menu</span>
+                                            <!-- Heroicon name: outline/menu -->
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                                <ul class="flex">
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="index.html" class="font-normal text-gray-500 ">Home</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="about.html" class="font-normal text-gray-500 ">About</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="blog.html" class="font-normal text-gray-500 active">Blog</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="contact.html" class="font-normal text-gray-500">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+
+                    <div id="menu-item" class="fixed top-0 inset-x-0 h-screen transition delay-200 transform origin-top-right md:hidden -translate-y-100 opacity-100 z-50">
+                        <div class="relative rounded-lg h-screen bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                            <div class="px-5 pt-4 flex items-center justify-between">
+                                <div></div>
+                                <div class="-mr-2">
+                                    <button
+                                        id="close-toggle"
+                                        type="button"
+                                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                    >
+                                        <span class="sr-only">Close main menu</span>
+                                        <!-- Heroicon name: outline/x -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="md:block text-center pb-5 md:ml-12 px-2 md:pr-4 md:space-x-8" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <ul class="block mt-6">
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="index.html" class="font-normal text-xl text-gray-500 ">Home</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="about.html" class="font-normal text-xl text-gray-500 ">About</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="blog.html" class="font-normal text-xl text-gray-500 active">Blog</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="contact.html" class="font-normal text-xl text-gray-500">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: header -->
+
+        <!-- START : DETAIL BLOG -->
+        <section class="text-gray-600 body-font mt-16">
+        <section class="text-gray-600 body-font mt-16">
+            <div class="container px-5  mx-auto flex flex-col">
+                <div class="lg:w-4/6 mx-auto">
+                <div class="rounded-lg h-80 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="./images/design/blog-1.jpg">
+                </div>
+                <div class="flex flex-col sm:flex-row mt-3">
+                    <div class=" sm:py-8  border-gray-200  text-center sm:text-left">
+                        <p class="leading-relaxed text-lg ">
+                            Apa yang dipikirkan kebanyakan orang saat ingin membeli sebuah Brankas?
+                            <br><br>
+                            Tentunya hal yang paling utama adalah bagaimana fungsi brankas tersebut dalam mengamankan barang barang yang berharga. Nah hal yang paling utama dan yang sering kita jumpai adalah, kebanyakan para peminat brankas menginginkan jenis brankas yang kuat dan tahan api. Karena penyebab yang paling sering dalam hal kehilangan barang berharga atau dokumen berharga adalah karena pencurian dan kebakaran.
+                            <br><br>
+                            Oleh sebab itu, minat terhadap brankas kuat tahan api sangat meningkat. Pembeli Brankas akan sangat banyak memilih jenis brankas yang kuat dan tentunya tahan api untuk pengamanan barang barang berharganya.
+                            <br><br>
+                            Lalu, apakah yang tersirat di benak kita atau kebanyakan peminat brankas dalam memilih merk Brankas yang kuat dan Tahan Api? Tentunya Brankas merk Chubb safes akan selalu keluar dari benak kita dan para peminta brankas. Seperti kita tahu, Brankas Chubb safes merupakan brankas terbaik no. 1 dalam hal kualitas kekuatan, keamanan dan kualitas tahan api nya. Sebagai brankas yang berstandard Eropa, sangat mungkin Chubb safes menjaga namanya dalam hal kualitas kekuatan keamanan dan tahan api nya. 
+                            <br><br>
+                            Nah itulah sedikit artikel mengenai brankas kuat tahan api. Semoga artikel ini dapat membantu anda dalam hal pemilihan brankas yang tepat. Karena memilih brankas yan tepat akan membuat anda semakin nyaman dan aman dalam hal pengamanan barang berharga anda dan pastinya, tidak akan penyesalan di kemudian hari. Jangan lupa, selain memilih yang tepat, anda juga harus bisa memilih Distributor Brankas yang aman dan terpercaya.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- END : DETAIL BLOG -->
+
+        <!-- START : FOOTER -->
+        <hr class=" mt-20"/>
+        <footer class="container text-center md:text-left mx-auto lg:max-w-7xl px-9  py-8">
+            <div class="grid md:grid-cols-4 gap-4 mx-auto">
+                <div class="w-20 my-auto mx-auto">
+                    <img src="./images/content/logo.png" alt="">
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">
+                                Company
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">
+                                Support
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Jln. Kebo iwa gang lempuyang no 5</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">wahyupurnama434@gmail.com</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">021 - 1111 - 2222</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <hr />
+        <p class="text-center py-5 font-base text-gray-400 ">All Rights Reserved wahyu teknik 2021</p>
+        <!-- END : FOOTER -->
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function () {
+                ga.q.push(arguments);
+            };
+            ga.q = [];
+            ga.l = +new Date();
+            ga("create", "UA-XXXXX-Y", "auto");
+            ga("set", "anonymizeIp", true);
+            ga("set", "transport", "beacon");
+            ga("send", "pageview");
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </body>
+</html>

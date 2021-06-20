@@ -8,5 +8,38 @@
         @apply font-semibold text-blue-500 relative  transition-all delay-200 ;
 
     }
+    .arrow-service{
+        color:#000;
+        stroke: #000;
+    }
+    .arrow-service:hover{
+        stroke: #fff;
+        color:#fff;
+        
+    }
+    .toggle{
+        transform : translateY(100vh);
+    }
+    .shadow-card{
+        box-shadow: 5px 10px 25px rgba(157, 157, 157, 0.25);
+    }
+    .shadow-card-2:hover{
+        box-shadow: 5px 10px 25px rgba(157, 157, 157, 0.25);
+    }
+
     
+    
+}
+@layer utilities{
+    .stretched-link{
+        @apply absolute inset-0 cursor-pointer;
+    }
+    
+}
+
+@media (min-width: 1160px) {
+    .retaggle{
+        right: -3px;
+        z-index:-99;
+    }
 }

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8" />
+        <title>Wahyu Teknik</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="apple-touch-icon" href="" />
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="./css/app.minify.css" />
+        <link rel="icon" href="images/favicon.ico" />
+
+        <meta name="theme-color" content="#000" />
+    </head>
+
+    <body class="text-gray-900">
+        <!-- START: header -->
+        <div class="relative bg-white h-full">
+            <div class="max-w-7xl  mx-auto ">
+                <div>
+                    <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+                        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+                            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                                <div class="flex items-center justify-between w-full md:w-auto">
+                                    <a href="#">
+                                        <span class="sr-only">Workflow</span>
+                                        <img class="h-8 w-auto sm:h-10" src="./images/content/logo.png" />
+                                    </a>
+                                    <div class="-mr-2 flex items-center md:hidden">
+                                        <button
+                                            id="toggle"
+                                            type="button"
+                                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                            aria-expanded="false"
+                                        >
+                                            <span class="sr-only">Open main menu</span>
+                                            <!-- Heroicon name: outline/menu -->
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                                <ul class="flex">
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="index.html" class="font-normal text-gray-500 ">Home</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="about.html" class="font-normal text-gray-500 ">About</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="blog.html" class="font-normal text-gray-500 active">Blog</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="contact.html" class="font-normal text-gray-500">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+
+                    <div id="menu-item" class="fixed top-0 inset-x-0 h-screen transition delay-200 transform origin-top-right md:hidden -translate-y-100 opacity-100 z-50">
+                        <div class="relative rounded-lg h-screen bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                            <div class="px-5 pt-4 flex items-center justify-between">
+                                <div></div>
+                                <div class="-mr-2">
+                                    <button
+                                        id="close-toggle"
+                                        type="button"
+                                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                    >
+                                        <span class="sr-only">Close main menu</span>
+                                        <!-- Heroicon name: outline/x -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="md:block text-center pb-5 md:ml-12 px-2 md:pr-4 md:space-x-8" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <ul class="block mt-6">
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="index.html" class="font-normal text-xl text-gray-500 ">Home</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="about.html" class="font-normal text-xl text-gray-500 ">About</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="blog.html" class="font-normal text-xl text-gray-500 active">Blog</a>
+                                    </li>
+                                    <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                        <a href="contact.html" class="font-normal text-xl text-gray-500">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: header -->
+
+        <!-- START : BLOG -->
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Wahyu Teknik</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Kami Adalah Master Pemindahan Brankas</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">CV Wahyu Teknik perusahaan yang berjalan di bidang pemindahan brankas, service ,dan sales brankas yang sudah bekerja sama dengan perusahan bank bumn, kami sudah di percaya untuk pemindahan brankas, mesin atm serta service brankas jika terjadi kerusakan, kami sangat profesional dalam bekerja, kami menjaga privasi perusahaan, dan kami sudah berpengalaman serta terpercaya.</p>
+                </div>
+                <div class="flex flex-wrap">
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                    <img src="./images/design/blog-1.jpg" alt="" class="w-full h-56 mb-4">
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Brankas Kuat Tahan Api</h2>
+                    <p class="leading-relaxed text-base mb-4">kebanyakan para peminat brankas menginginkan jenis brankas yang kuat dan tahan api. Karena penyebab yang paling sering dalam hal kehilangan barang berharga.</p>
+                    <a  href="details-blog.html" class="text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                    </a>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                    <img src="./images/design/blog-3.jpg" alt="" class="w-full h-56 mb-4">
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Memindahkan Brankas anda</h2>
+                    <p class="leading-relaxed text-base mb-4">pakah Anda perlu merelokasi tempat yang aman karena pindah rumah atau tempat usaha.</p>
+                    <a href="details-blog-2.html" class="text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- END : BLOG -->
+
+        <!-- START : FOOTER -->
+        <hr class=" mt-20"/>
+        <footer class="container text-center md:text-left mx-auto lg:max-w-7xl px-9  py-8">
+            <div class="grid md:grid-cols-4 gap-4 mx-auto">
+                <div class="w-20 my-auto mx-auto">
+                    <img src="./images/content/logo.png" alt="">
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">
+                                Company
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">
+                                Support
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Jln. Kebo iwa gang lempuyang no 5</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">wahyupurnama434@gmail.com</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">021 - 1111 - 2222</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <hr />
+        <p class="text-center py-5 font-base text-gray-400 ">All Rights Reserved wahyu teknik 2021</p>
+        <!-- END : FOOTER -->
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function () {
+                ga.q.push(arguments);
+            };
+            ga.q = [];
+            ga.l = +new Date();
+            ga("create", "UA-XXXXX-Y", "auto");
+            ga("set", "anonymizeIp", true);
+            ga("set", "transport", "beacon");
+            ga("send", "pageview");
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </body>
+</html>

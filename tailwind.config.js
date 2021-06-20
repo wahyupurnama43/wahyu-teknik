@@ -21,11 +21,11 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
-      gray: colors.coolGray,
+      gray: {...colors.coolGray,500:"#606060", 900:"#444444"},
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
-      blue: {...colors.blue,500: "#377BFF"},
+      blue: {...colors.blue,500: "#377BFF", 550 : "#226DFF"},
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
@@ -66,6 +66,7 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      100:"100vh",
     },
     animation: {
       none: "none",
@@ -174,8 +175,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "Noto Sans",
-        "sans-serif"
+        "Noto Sans"
       ],
       
     },
@@ -573,6 +573,7 @@ module.exports = {
       90: ".9",
       95: ".95",
       100: "1",
+      101: "1.01",
       105: "1.05",
       110: "1.1",
       125: "1.25",

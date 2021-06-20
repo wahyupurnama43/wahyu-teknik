@@ -1,107 +1,415 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title>Wahyu Teknik</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <title>Wahyu Teknik</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="" />
-    <!-- Place favicon.ico in the root directory -->
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="apple-touch-icon" href="" />
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="./css/app.minify.css" />
-    <link rel="icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="./css/app.minify.css" />
+        <link rel="icon" href="images/favicon.ico" />
 
-    <meta name="theme-color" content="#000" />
-  </head>
+        <meta name="theme-color" content="#000" />
+    </head>
 
-  <body>
-    <!-- Add your site or application content here -->
+    <body class="text-gray-900">
+        <!-- START: header -->
+        <div class="relative bg-white h-full">
+            <div class="max-w-7xl  mx-auto ">
+                <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-xl xl:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                    <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-96 text-white transform translate-x-1/2 retaggle" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                        <polygon points="50,0 100,0 50,100 0,100" />
+                    </svg>
 
-    <!-- START: NAVBAR -->
-    <div class="container mx-auto absolute inset-0 h-12 py-4 px-4">
-      <nav class="relative flex items-center justify-between sm:h-10 md:justify-start" aria-label="Global">
-        <div class="flex items-center flex-grow flex-shrink-0 md:flex-grow-0">
-          <div class="flex items-center justify-between w-full md:w-auto">
-            <a href="#">
-              <img class="h-8 w-auto sm:h-10 focus:outline-none" src="images/content/logo.png">
-            </a>
-            <div class="-mr-2 flex items-center md:hidden">
-              <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <!-- Heroicon name: outline/menu -->
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
+                    <div>
+                        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+                            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+                                <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                                    <div class="flex items-center justify-between w-full md:w-auto">
+                                        <a href="#">
+                                            <span class="sr-only">Workflow</span>
+                                            <img class="h-8 w-auto sm:h-10" src="./images/content/logo.png" />
+                                        </a>
+                                        <div class="-mr-2 flex items-center md:hidden">
+                                            <button
+                                                id="toggle"
+                                                type="button"
+                                                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                                aria-expanded="false"
+                                            >
+                                                <span class="sr-only">Open main menu</span>
+                                                <!-- Heroicon name: outline/menu -->
+                                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                                    <ul class="flex">
+                                        <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                            <a href="index.html" class="font-normal text-gray-500 active">Home</a>
+                                        </li>
+                                        <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                            <a href="about.html" class="font-normal text-gray-500">About</a>
+                                        </li>
+                                        <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                            <a href="blog.html" class="font-normal text-gray-500">Blog</a>
+                                        </li>
+                                        <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                            <a href="contact.html" class="font-normal text-gray-500">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+
+                        <div id="menu-item" class="fixed top-0 inset-x-0 h-screen transition delay-200 transform origin-top-right md:hidden -translate-y-100 opacity-100 z-50">
+                            <div class="relative rounded-lg h-screen bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div class="px-5 pt-4 flex items-center justify-between">
+                                    <div></div>
+                                    <div class="-mr-2">
+                                        <button
+                                            id="close-toggle"
+                                            type="button"
+                                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                        >
+                                            <span class="sr-only">Close main menu</span>
+                                            <!-- Heroicon name: outline/x -->
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="md:block text-center pb-5 md:ml-12 px-2 md:pr-4 md:space-x-8" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                    <ul class="block mt-6">
+                                        <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                            <a href="index.html" class="font-normal text-xl text-gray-500 active">Home</a>
+                                        </li>
+                                        <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                            <a href="about.html" class="font-normal text-xl text-gray-500">About</a>
+                                        </li>
+                                        <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                            <a href="blog.html" class="font-normal text-xl text-gray-500">Blog</a>
+                                        </li>
+                                        <li class="px-4 py-5 transform transition duration-500 hover:scale-110 hover:text-blue-500 n">
+                                            <a href="contact.html" class="font-normal text-xl text-gray-500">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                            <div class="sm:text-center lg:text-left">
+                                <h1 class="text-4xl  tracking-tight font-semibold text-gray-900 sm:text-5xl md:text-4xl text-center lg:text-left" style="line-height: 118.5%;">
+                                    <span class="block xl:inline">Kami membantu anda untuk</span>
+                                    <span class="block text-blue-500 xl:inline"> mengamankan uang anda </span>
+                                </h1>
+                                <p class="mt-4 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-8 md:text-base lg:mx-0 ">
+                                    CV Wahyu Teknik melayani pemindahan segala brankas, mesin atm, perlengkapan kantor, service brnakas, spare part brankas, dan sales, kami juga sudah bekerja sama dengan BNI, BCA, Maybank, Bank nobu, Bank
+                                    permata , Bank Shinhan, Bank Sinarmas
+                                </p>
+                                <div class="mt-6 sm:mt-8 md:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                    <div class="rounded-full">
+                                        <a
+                                            href="#"
+                                            class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg font-medium rounded-full text-white bg-blue-500 hover:bg-blue-550 md:py-1.5 md:text-lg md:px-10 transition-all delay-400 transform hover:scale-105 hover:shadow-md"
+                                        >
+                                            Hubungi Kami
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./images/design/hero.jpg" alt="foto hero" />
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8 ">
-          <ul class="flex">
-            <li class="px-4 transform transition duration-500 hover:scale-110 hover:text-blue-500 ">
-              <a href="#" class="font-normal text-gray-500  active ">Home</a>
-            </li>
-            <li class="px-4 transform transition duration-500 hover:scale-110 hover:text-blue-500 ">
-                <a href="#" class="font-normal text-gray-500  ">About</a>
-            </li>
-            <li class="px-4 transform transition duration-500 hover:scale-110 hover:text-blue-500 ">
-                <a href="#" class="font-normal text-gray-500  ">Blog</a>
-            </li>
-            <li class="px-4 transform transition duration-500 hover:scale-110 hover:text-blue-500 ">
-                <a href="#" class="font-normal text-gray-500   ">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <!-- END: NAVBAR -->
-    <!-- <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-      <div class="sm:text-center lg:text-left">
-        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-          <span class="block xl:inline">Data to enrich your</span>
-          <span class="block text-indigo-600 xl:inline">online business</span>
-        </h1>
-        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
-        </p>
-        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div class="rounded-md shadow">
-            <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-              Get started
-            </a>
-          </div>
-          <div class="mt-3 sm:mt-0 sm:ml-3">
-            <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
-              Live demo
-            </a>
-          </div>
-        </div>
-      </div>
-    </main> -->
-    <!-- <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
-    </div> -->
-    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sunt voluptatem nisi, obcaecati officiis hic ab, aut consequatur minus expedita fuga tempore vitae ducimus animi dolores cupiditate atque optio quasi nesciunt assumenda. Cumque, sapiente modi? Pariatur, minima. Doloribus repellendus ad quia tempore labore odit. Tempora id similique iure vero quos! -->
+        <!-- END: header -->
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+        <!-- START : about me -->
+        <section class="lg:container relative mt-10 lg:max-w-7xl mx-auto text-gray-900">
+            <div class="lg:absolute inset-0 left-0 top-20 z-50 hidden lg:block max-h-4 max-w-4">
+                <img src="./images/design/img-1.png" alt="" />
+            </div>
+            <div class="px-9 text-center md:text-left">
+                <p class="text-base font-medium">Tentang Kami</p>
+                <h1 class="text-lg md:text-xl font-semibold mt-2 md:mt-4 mb-4 md:mb-8">Kami lebih dari jasa pengiriman</h1>
+
+                <div class="md:grid  md:grid-rows-2  grid-flow-col gap-4">
+                    <div class="md:row-span-2 py-3 md:py-0 transform transition duration-500 hover:scale-101 cursor-pointer">
+                        <img src="./images/design/content-1.jpg" alt="" class="w-full  md:h-full">
+                    </div>
+                    <div class="py-3 md:py-0 transform transition duration-500 hover:scale-101 cursor-pointer">
+                        <img src="./images/design/content-2.jpg" alt="" class="w-full  md:h-full">
+                    </div>
+                    <div class="py-3 md:py-0 transform transition duration-500 hover:scale-101 cursor-pointer">
+                        <img src="./images/design/content-3.jpg" alt="" class="w-full  md:h-full">
+                    </div>
+                </div>
+                <div class="grid  md:grid-cols-2  gap-4">
+                    <div>
+                        <h1 class="py-4 md:py-8 font-semibold text-2xl md:text-4xl">Siapa kita </h1>
+                        <p class="font-medium text-left text-base md:w-10/12">
+                            CV Wahyu Teknik perusahaan yang berjalan di bidang pemindahan brankas, service ,dan sales brankas yang sudah bekerja sama dengan perusahan bank bumn, kami sudah di percaya untuk pemindahan brankas, mesin atm serta service brankas jika terjadi kerusakan, kami sangat profesional dalam bekerja, kami menjaga privasi perusahaan, dan kami sudah berpengalaman serta terpercaya.
+                        </p>
+                        <div class="flex items-center mt-5 transform transition duration-500 hover:scale-101  cursor-pointer">
+                            <a href="" class="flex text-blue-500 mr-4 ">Info lebih lanjut </a> 
+                            <svg width="42" height="19" viewBox="0 0 42 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 8.95745H41M41 8.95745L32.8854 1M41 8.95745L33.7396 18" stroke="#377BFF"/>
+                                </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="py-4 md:py-8 font-semibold text-2xl md:text-4xl">Apa yang kita lakukan                         </h1>
+                        <p class=" font-medium text-left  text-base md:w-10/12">
+                            CV Wahyu Teknik sudah banyak kerja sama dengan bank bumn dan swasta seperti BNI, BTN, Mandiri,BRI, Maybank, Bank nobu, Bank Permata, BCA, kami kerja sama dalam hal pemindahan mesin ATM, pemindahan kantor,service brankas serta pemindahan brankas, Perusahaan kami sudah bekerja sama lebih dari 3 tahun
+                        </p>
+                        <div class="flex items-center mt-5 transform transition duration-500 hover:scale-101  cursor-pointer">
+                            <a href="" class="flex text-blue-500 mr-4 ">Info lebih lanjut </a> 
+                            <svg width="42" height="19" viewBox="0 0 42 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 8.95745H41M41 8.95745L32.8854 1M41 8.95745L33.7396 18" stroke="#377BFF"/>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+        <!-- END : about me -->
+
+        <!-- START : SERVICE -->
+        <section class="container mx-auto lg:max-w-7xl px-9  mt-20">
+            <div class="text-center">    
+                <p class="text-base font-medium">Layanan Kami</p>
+                <h1 class="text-lg md:text-2xl font-semibold mt-2 md:mt-4 mb-4 md:mb-8">Kami Adalah Master Pemindahan Brankas </h1>
+            </div>
+            <div class="relative grid md:grid-cols-2 lg:grid-cols-3 md:w-5/6 mx-auto gap-4">
+                <div class="relative bg-white text-gray-900 hover:bg-blue-500 hover:text-white h-16 flex w-full py-5 shadow-card font-medium px-6 arrow-service" style="border-radius: 8px;">
+                    <h1 class="mr-10">Pemindahan Brankas  </h1>
+                    <svg class="fill-curent absolute right-6  top-6" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.95745H21M21 8.95745L12.8854 1M21 8.95745L12.8854 17.5" class=""/>
+                    </svg>
+                    <a href="" class="stretched-link"></a>
+                </div>
+
+                <div class="relative bg-white text-gray-900 hover:bg-blue-500 hover:text-white h-16 flex w-full py-5 shadow-card font-medium px-6 arrow-service" style="border-radius: 8px;">
+                    <h1 class="mr-10">Pemindahan ATM  </h1>
+                    <svg class="fill-curent absolute right-6  top-6" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.95745H21M21 8.95745L12.8854 1M21 8.95745L12.8854 17.5" class=""/>
+                    </svg>
+                    <a href="" class="stretched-link"></a>
+                </div>
+
+                <div class="relative bg-white text-gray-900 hover:bg-blue-500 hover:text-white h-16 flex w-full py-5 shadow-card font-medium px-6 arrow-service" style="border-radius: 8px;">
+                    <h1 class="mr-10">Penjualan Brankas </h1>
+                    <svg class="fill-curent absolute right-6  top-6" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.95745H21M21 8.95745L12.8854 1M21 8.95745L12.8854 17.5" class=""/>
+                    </svg>
+                    <a href="" class="stretched-link"></a>
+                </div>
+
+                <div class="relative bg-white text-gray-900 hover:bg-blue-500 hover:text-white h-16 flex w-full py-5 shadow-card font-medium px-6 arrow-service" style="border-radius: 8px;">
+                    <h1 class="mr-10">Service Brankas  </h1>
+                    <svg class="fill-curent absolute right-6  top-6" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.95745H21M21 8.95745L12.8854 1M21 8.95745L12.8854 17.5" class=""/>
+                    </svg>
+                    <a href="" class="stretched-link"></a>
+                </div>
+
+                <div class="relative bg-white text-gray-900 hover:bg-blue-500 hover:text-white h-16 flex w-full py-5 shadow-card font-medium px-6 arrow-service" style="border-radius: 8px;">
+                    <h1 class="mr-10">Sparepart Brankas  </h1>
+                    <svg class="fill-curent absolute right-6  top-6" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.95745H21M21 8.95745L12.8854 1M21 8.95745L12.8854 17.5" class=""/>
+                    </svg>
+                    <a href="" class="stretched-link"></a>
+                </div>
+
+                <div class="relative bg-white text-gray-900 hover:bg-blue-500 hover:text-white h-16 flex w-full py-5 shadow-card font-medium px-6 arrow-service" style="border-radius: 8px;">
+                    <h1 class="mr-10">Pemindahan Kantor </h1>
+                    <svg class="fill-curent absolute right-6  top-6" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.95745H21M21 8.95745L12.8854 1M21 8.95745L12.8854 17.5" class=""/>
+                    </svg>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                
+            </div>
+        </section>
+        <!-- END : SERVICE -->
+
+        <!-- START: KEUNGGULAN -->
+        <div class="container mx-auto px-9  mt-20">
+            <div class="text-center">    
+                <p class="text-base font-medium">Mengapa Memilih kami </p>
+                <h1 class="text-lg md:text-2xl font-semibold mt-2 md:mt-4 mb-4 md:mb-8">Kami Adalah Master Pemindahan Brankas </h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+                <div class="h-auto py-6 px-8 w-full text-center transform hover:scale-101 transition delay-200 shadow-card-2" style="border-radius: 8px;">
+                    <div class="flex justify-center">
+                        <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M55.9482 17.4592L40.0945 10.6648C37.7991 9.68107 35.2009 9.68107 32.9055 10.6648L17.0518 17.4592C15.9335 17.9385 15.2083 19.0382 15.2083 20.255V36.2325C15.2083 42.1264 18.0547 47.6574 22.8507 51.0832L32.9641 58.307C35.0793 59.8178 37.9207 59.8178 40.0359 58.307L50.1493 51.0832C54.9453 47.6574 57.7917 42.1264 57.7917 36.2325V20.255C57.7917 19.0382 57.0665 17.9385 55.9482 17.4592ZM46.4059 27.9997C46.7509 27.5684 46.681 26.9391 46.2497 26.5941C45.8184 26.2491 45.1891 26.319 44.8441 26.7503L33.3754 41.0862L28.0821 35.7929C27.6916 35.4024 27.0584 35.4024 26.6679 35.7929C26.2774 36.1834 26.2774 36.8166 26.6679 37.2071L32.3562 42.8954C32.9884 43.5276 34.0297 43.4699 34.5882 42.7718L46.4059 27.9997Z" fill="#377BFF"/>
+                        </svg>
+                    </div>
+                    <h1 class="md:text-2xl font-semibold py-4">Keamanan</h1>
+                    <p class="lg:w-3/4 sm:w-72 mx-auto font-medium">
+                        Kami selalu menjaga keamanan dan privasi client kami
+                    </p>
+                </div>
+
+                <div class="h-auto py-6 px-8 w-full text-center transform hover:scale-101 transition delay-200 shadow-card-2" style="border-radius: 8px;">
+                    <div class="flex justify-center">
+                        <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.2731 12.2554L11.1898 18.3387" stroke="#377BFF" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M54.8832 12.2554L60.9666 18.3387" stroke="#377BFF" stroke-width="5" stroke-linecap="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5 60.8334C49.9389 60.8334 60.8333 49.939 60.8333 36.5001C60.8333 23.0612 49.9389 12.1667 36.5 12.1667C23.0611 12.1667 12.1667 23.0612 12.1667 36.5001C12.1667 49.939 23.0611 60.8334 36.5 60.8334ZM43.3642 29.5207C43.7092 29.0894 43.6393 28.4601 43.208 28.1151C42.7768 27.7701 42.1475 27.84 41.8025 28.2713L36.2919 35.1595L27.9297 29.5847C27.4702 29.2784 26.8493 29.4026 26.5429 29.8621C26.2366 30.3216 26.3608 30.9425 26.8203 31.2488L35.7546 37.205C36.2941 37.5647 37.019 37.4521 37.424 36.9458L43.3642 29.5207Z" fill="#377BFF"/>
+                        </svg>
+                            
+                    </div>
+                    <h1 class="md:text-2xl font-semibold py-4">Waktu</h1>
+                    <p class="lg:w-3/4 sm:w-72 mx-auto font-medium">
+                        Kami selalu tepat waktu di lapangan untuk kepuasan client
+                    </p>
+                </div>
+
+                <div class="lg:col-span-1 md:col-span-2 md:mx-auto h-auto py-6 px-8 w-full text-center transform hover:scale-101 transition delay-200 shadow-card-2" style="border-radius: 8px;">
+                    <div class="flex justify-center">
+                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.895 24.2775C18.135 30.645 23.355 35.8425 29.7225 39.105L34.6725 34.155C35.28 33.5475 36.18 33.345 36.9675 33.615C39.4875 34.4475 42.21 34.8975 45 34.8975C46.2375 34.8975 47.25 35.91 47.25 37.1475V45C47.25 46.2375 46.2375 47.25 45 47.25C23.8725 47.25 6.75 30.1275 6.75 9C6.75 7.7625 7.7625 6.75 9 6.75H16.875C18.1125 6.75 19.125 7.7625 19.125 9C19.125 11.8125 19.575 14.5125 20.4075 17.0325C20.655 17.82 20.475 18.6975 19.845 19.3275L14.895 24.2775Z" fill="#377BFF"/>
+                        </svg>
+                            
+                    </div>
+                    <h1 class="md:text-2xl font-semibold py-4">Bantuan</h1>
+                    <p class="lg:w-3/4 md:w-1/3 sm:w-72  mx-auto font-medium">
+                        Kami akan selalu membantu client jika terdapat masalah dan kami aktif 24 jam
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- END: KEUNGGULAN -->
+
+        <!-- START: CLIENT -->
+        <section class="container mx-auto lg:max-w-7xl px-9  mt-20 mb-8">
+            <div class="text-center">    
+                <p class="text-base font-medium">Client Kami</p>
+            </div>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2  gap-4 ">
+                <div class="my-auto mx-auto">
+                    <img src="./images/design/client-6.png" alt="">
+                </div>
+                <div class="my-auto mx-auto">
+                    <img src="./images/design/client-1.png" alt="">
+                </div>
+                <div class="my-auto mx-auto">
+                    <img src="./images/design/client-2.png" alt="">
+                </div>
+                <div class="my-auto mx-auto py-7 md:py-0">
+                    <img src="./images/design/client-3.png" alt="">
+                </div>
+                <div class="lg:col-span-2 md:col-span-1 lg:ml-auto my-auto mx-auto lg:mx-0">
+                    <img src="./images/design/client-4.png" alt="">
+                </div>
+                <div class="lg:col-span-2 md:col-span-1 lg:mr-auto my-auto mx-auto lg:mx-0">
+                    <img src="./images/design/client-5.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- END: CLIENT -->
+
+        <!-- START : FOOTER -->
+        <hr class=" mt-20"/>
+        <footer class="container text-center md:text-left mx-auto lg:max-w-7xl px-9  py-8">
+            <div class="grid md:grid-cols-4 gap-4 mx-auto">
+                <div class="w-20 my-auto mx-auto">
+                    <img src="./images/content/logo.png" alt="">
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">About</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">
+                                Company
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="font-semibold text-2lg mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">
+                                Support
+                            </a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">Jln. Kebo iwa gang lempuyang no 5</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">wahyupurnama434@gmail.com</a>
+                        </li>
+                        <li class="font-base text-gray-400 mb-4 transform transition duration-500 hover:scale-110">
+                            <a href="">021 - 1111 - 2222</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <hr />
+        <p class="text-center py-5 font-base text-gray-400 ">All Rights Reserved wahyu teknik 2021</p>
+        <!-- END : FOOTER -->
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function () {
+                ga.q.push(arguments);
+            };
+            ga.q = [];
+            ga.l = +new Date();
+            ga("create", "UA-XXXXX-Y", "auto");
+            ga("set", "anonymizeIp", true);
+            ga("set", "transport", "beacon");
+            ga("send", "pageview");
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </body>
 </html>
